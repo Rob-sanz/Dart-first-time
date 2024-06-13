@@ -5,5 +5,7 @@ void main(){
 
   prom = (num1+num2+num3)/3;
 
+  //Imprimir todos los numeros junto al promedio
   print('El PROMEDIO de $num1 , $num2 , $num3  es: $prom');
+  
 }
