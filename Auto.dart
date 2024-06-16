@@ -1,6 +1,6 @@
 
   //Crea una clase llamada Auto que tenga como atributo: (Color, Marca, Modelo, placas) y crea 
-  //metodos para acelerar y frenar, toda instancia de auto debe inilializarce en detenido
+  //metodos para acelerar y frenar, toda instancia de auto debe inilializarce en detenido.
 
 void main(){
 
@@ -32,7 +32,7 @@ class Auto{
   late String marca;
   late String placas;
   late int anio; 
-  bool estado = false; //false para detenido, true para en marcha
+  bool estado = false; //false para detenido, true para en marcha.
 
   //Contructor
   Auto({
