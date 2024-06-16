@@ -75,13 +75,11 @@ class Auto{
     print('// Año: $anio');
     print('// Placas: $placas');
     if(estado == true){
-      print('// Estado => En Marcha');
+      print('// Estado: En Marcha');
     }
     else{
       print('// Estado: Detenido');
     }
     print('/////////////////////');
   }
-
-
 }
