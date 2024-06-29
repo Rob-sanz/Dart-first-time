@@ -14,20 +14,23 @@ class _ContadorPantallaState extends State<ContadorPantalla> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
       drawer: Drawer(
-        backgroundColor: Colors.blueGrey[100],
+        backgroundColor: Colors.blueGrey[100],  //Cambia color del Drawer
       ),
+
       appBar: AppBar(
         title: const Text('Pantalla Contador'),
         centerTitle: true,  //Centra el titulo en appBar
         backgroundColor: Colors.blueGrey[500],  //Cambiar color del appBarr
       ),
-        body: Center( child: 
+
+      body: Center( child: 
         Column( mainAxisAlignment: MainAxisAlignment.center, 
-        children: [
-          Text('$contadorDeClicks', style: const TextStyle(fontSize: 160 , fontWeight: FontWeight.w200),),
-          const Text('Cantidad de Clicks', style: TextStyle(fontSize:40 , fontWeight: FontWeight.w200),)
-        ],
+          children: [
+            Text('$contadorDeClicks', style: const TextStyle(fontSize: 160 , fontWeight: FontWeight.w200),),
+            Text('Click${contadorDeClicks == 1 ? '' : 's' }', style: const TextStyle(fontSize:40 , fontWeight: FontWeight.w200),)
+          ],
         ),
       ),
       
@@ -38,7 +41,6 @@ class _ContadorPantallaState extends State<ContadorPantalla> {
       backgroundColor: Colors.blueGrey[100], //Cambia el color del button
       child: const Icon(Icons.plus_one),  //Agrega Icono al button  
       ),
-
 
     );
   }
